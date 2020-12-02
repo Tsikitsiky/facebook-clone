@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+.post-container {
+    max-width: 300px;
+    margin: 2rem auto;
+}
+
+.post-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile, .commenter {
+    border-radius: 50%;
+}
+
+.comment-content {
+    margin: 0
+}
+
+.comments-container {
+    margin-bottom: 1rem;
+    margin-top: 10px;
+}
