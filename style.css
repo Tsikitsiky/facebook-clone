@@ -19,8 +19,12 @@ header a {
     justify-content: space-between;
 }
 
-.profile, .commenter {
+.profile, .profile-post, .commenter {
     border-radius: 50%;
+}
+
+.profile {
+    width: 30px;
 }
 
 .comment-content {

@@ -42,7 +42,7 @@ export default function Post({post}) {
         console.log(post)
         const newComment ={
             "picture": "https://picsum.photos/30",
-                "id": Date.now(),
+                "commentId": Date.now(),
                 "by": state.currentUser.userName,
                 "content": comment,
                 "On": Date.now()
@@ -59,12 +59,14 @@ export default function Post({post}) {
         dispatch({type: "SET_POST_LIST", value: updatedPost})
         setComment('')
     }
+
+    //console.log(user)
     return (
         <div className="post-container">
                         <div className="post-head">
                             <Image>
-                                <img className="profile" src= {post.profilePicture} />
-                                <span> {post.postedBy} </span>
+                                <img className="profile-post" src= {state.currentUser.profilePic} />
+                                <span> {state.currentUser.userName} </span>
                             </Image>
                             <p> {date.toLocaleDateString()} </p>
                         </div>
@@ -84,7 +86,7 @@ export default function Post({post}) {
                         </LikeBtn>
                         <div> 
                             {post.comments.map(comment => {
-                            return <Comments  key={comment.id} comment = {comment} />
+                            return <Comments  key={comment.commentId} comment = {comment} />
                             })} 
                             <form onSubmit={handleSubmit}>
                                 <input value={comment} placeholder="Add a comment" onChange={(e) => setComment(e.target.value)} />

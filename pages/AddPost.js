@@ -2,14 +2,15 @@ import React, { useContext, useState } from 'react'
 import  {Context}  from '../Context';
 
 function AddPost() {
-    const {state, dispatch} = useContext(Context)
+    const {state, dispatch, user} = useContext(Context)
     const [postDescription, setPostDescription] = useState('');
     const [image, setImage] = useState("");
     function handleSubmit(e) {
         e.preventDefault();
         const newPost = {
-        "id": state.currentUser.id,
-        "postedBy": state.currentUser.userName,
+        "postId": Date.now(),
+        "userId": state.currentUser.id,
+        "postedBy":state.currentUser.userName,
         "profilePicture": state.currentUser.profilePic,
         "postedOn": Date.now(),
         "postDescription": postDescription,

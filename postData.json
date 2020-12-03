@@ -1,8 +1,9 @@
 [
     {
-        "id": "#1",
+        "postId": "#1",
         "postedBy": "Sarah",
         "profilePicture": "https://picsum.photos/50",
+        "userId": 5,
         "postedOn": 1606718726437,
         "postDescription": "Blalalalalalaal lalsfjdf shsuvuv ufgvigudug",
         "image": "https://picsum.photos/300",
@@ -19,22 +20,24 @@
         "comments": [
             {    
                 "picture": "https://picsum.photos/30",
-                "id": "1",
+                "commentId": "1",
                 "by": "Person",
+                "userId": 5,
                 "content": "djdf dfheir sergegsi",
                 "On": 1606718726439
             },  
             {   
                 "picture": "https://picsum.photos/30",
-                "id": "2",
+                "commentId": "2",
                 "by": "Person 2",
+                "userId": 15,
                 "content": "djdf dfheir sergegsi",
                 "On": 1606718726449
             }
         ]
     },
     {
-        "id": "#2",
+        "postId": "#2",
         "postedBy": "Other",
         "profilePicture": "https://picsum.photos/50",
         "postedOn": 1606718726567,
@@ -52,14 +55,16 @@
         ],
         "comments": [
             {   "picture": "https://picsum.photos/30",
-                "id": "10",
+                "commentId": "10",
                 "by": "Person",
+                "userId": 5,
                 "content": "djdf dfheir sergegsi",
                 "On": 1606718756439
             },
             {
                 "picture": "https://picsum.photos/30",
-                "id": "14",
+                "commentId": "14",
+                "userId": 15,
                 "by": "Person 2",
                 "content": "djdf dfheir sergegsi",
                 "On": 1606718726440

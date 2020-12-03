@@ -1,0 +1,12 @@
+[
+    {
+        "id": 5,
+        "userName": "Sarah",
+        "profilePic": "https://picsum.photos/50"
+    },
+    {
+        "id": 15,
+        "userName": "Colbert",
+        "profilePic": "https://picsum.photos/50"
+    }
+]

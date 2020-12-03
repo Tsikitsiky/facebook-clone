@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from "styled-components";
+import { Context } from '../Context';
 import Image from "./Image"
 
 
 function Comments({comment}) {
+    const {user} = useContext(Context);
     let date = new Date(Number(comment.On))
     return (
         <div className="comments-container">
